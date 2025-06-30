@@ -1,6 +1,6 @@
 {
     "name": "@reillymc/es-utils",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "A small collection of common utilities used across TypeScript projects.",
     "type": "module",
     "types": "./lib/types/index.d.ts",
@@ -16,7 +16,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/reillymc/es-utils.git"
+        "url": "git+https://github.com/reillymc/es-utils.git"
     },
     "keywords": [
         "npm",

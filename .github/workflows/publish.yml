@@ -1,28 +1,28 @@
 name: Publish NPM package to GitHub Packages
- 
+
 on:
-  workflow_run:
-    workflows: ['Tests']
-    branches: [main]
-    types:
-      - completed
-  
+    workflow_run:
+        workflows: ["Test"]
+        branches: [main]
+        types:
+            - completed
+
 jobs:
-  publish:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
- 
-    steps:
-      - uses: actions/checkout@v4
- 
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          registry-url: 'https://npm.pkg.github.com/'
-        run: npm install
-        run: npm run build
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    publish:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+            packages: write
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 22
+                  registry-url: "https://npm.pkg.github.com/"
+            - run: npm install
+            - run: npm run build
+            - run: npm publish
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

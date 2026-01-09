@@ -1,6 +1,6 @@
 {
     "name": "@reillymc/es-utils",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "A small collection of common utilities used across TypeScript projects.",
     "type": "module",
     "types": "./lib/types/index.d.ts",

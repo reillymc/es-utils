@@ -20,7 +20,7 @@ export const ValidateString = (
         lengthMin = DefaultStringValidationOptions.lengthMin,
         lengthMax = DefaultStringValidationOptions.lengthMax,
     }: StringValidationOptions = DefaultStringValidationOptions
-): boolean => {
+): str is string => {
     if (str === null || str === undefined || !str.length) {
         return false;
     }

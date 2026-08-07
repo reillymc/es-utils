@@ -1,17 +1,15 @@
 {
     "name": "@reillymc/es-utils",
-    "version": "0.0.9",
+    "version": "0.0.14",
     "description": "A small collection of common utilities used across TypeScript projects.",
     "type": "module",
-    "types": "./lib/index.d.ts",
-    "main": "./lib/index.js",
-    "files": [
-        "lib/**/*"
-    ],
+    "sideEffects": false,
+    "exports": "./lib/index.js",
+    "types": "./lib/default.d.ts",
     "scripts": {
         "clean": "rm -rf ./lib",
-        "build": "npm run clean && tsc -p ./tsconfig.json",
-        "test": "node --experimental-strip-types --test",
+        "build": "npm run clean && tsc -p ./tsconfig.build.json",
+        "test": "node --test src/**.test.ts",
         "prepack": "npm run build"
     },
     "repository": {
@@ -30,7 +28,7 @@
     },
     "homepage": "https://github.com/reillymc/es-utils#readme",
     "devDependencies": {
-        "@types/node": "^22.12",
+        "@types/node": "^24.13.3",
         "typescript": "^5.8"
     }
 }

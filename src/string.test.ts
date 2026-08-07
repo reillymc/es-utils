@@ -1,7 +1,7 @@
 import assert from "node:assert";
 import { describe, it } from "node:test";
 
-import { ValidateString } from "../src/string.ts";
+import { ValidateString } from "./string.ts";
 
 describe("Validate String Function", () => {
     it("should return invalid for undefined", () => {

@@ -5,11 +5,14 @@
         "moduleResolution": "bundler",
         "rootDir": "./src",
         "outDir": "./lib/",
+        "types": [
+            "node"
+        ],
         "strict": true,
         "forceConsistentCasingInFileNames": true,
+        "allowImportingTsExtensions": true,
+        "rewriteRelativeImportExtensions": true,
         "declaration": true,
+        "declarationMap": true
     },
-    "files": [
-        "./src/index.ts"
-    ]
 }

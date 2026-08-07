@@ -1,7 +1,7 @@
 import assert from "node:assert";
 import { describe, it } from "node:test";
 
-import { EnsureArray } from "../src/array.ts";
+import { EnsureArray } from "./array.ts";
 
 describe("Ensure Array Function", () => {
     it("should return array for single item", () => {

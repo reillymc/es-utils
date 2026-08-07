@@ -1,7 +1,7 @@
 import assert from "node:assert";
 import { describe, it } from "node:test";
 
-import { Undefined } from "../src/symbol.ts";
+import { Undefined } from "./symbol.ts";
 
 describe("Undefined Function", () => {
     it("should filter undefined and null from given array", () => {

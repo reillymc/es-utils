@@ -1,16 +1,15 @@
 {
     "compilerOptions": {
-        "lib": ["ES2024"],
-        "target": "ES2024",
+        "target": "esnext",
         "module": "esnext",
         "moduleResolution": "bundler",
+        "rootDir": "./src",
         "outDir": "./lib/",
-        "declarationDir": "./lib/types",
         "strict": true,
-        "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "declaration": true,
-        "declarationMap": true
     },
-    "files": ["./src/index.ts"]
+    "files": [
+        "./src/index.ts"
+    ]
 }
